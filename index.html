@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAUFIK BAHRUL ALAM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="judul">
+        <h1>FORM ORDER</h1>
+        <p>Isi detail produk yang ingin kamu titip dibawah ini ya, mohon isi dengan teliti agar total 
+            biaya akurat
+        </p>
+    </div>
+    <form action="" method="">
+        <div class="form">
+            <fieldset>
+                <legend>
+                    <h3>INFORMASI PRODUK</h3>
+                </legend>
+                <div class="row">
+                    <label><b>URL</b></label>
+                    <input type="url" name="url" placeholder="https://www.tokopedia.com" />
+                </div>
+                <div class="row">
+                    <label><b>NAMA PRODUK</b></label>
+                    <input type="text" name="namaproduk" placeholder="Tulis Nama Produk" />
+                </div>
+                <div class="row">
+                    <label><b>KATEGORI PRODUK</b></label>
+                    <select name="kategori">
+                        <option value="gadget">Pilih</option>
+                        <option value="fashion">Elektronik</option>
+                        <option value="sembako">Sembako</option>
+                        <option value="perabot">Pakaian</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label><b>HARGA/PCS</b></label>
+                    <div class="hg">
+                        <input type="number" name="harga" placeholder="Tulis Harga Produk" />
+                        <select name="matauang">
+                            <option value="usd">USD-$</option>
+                            <option value="idr">IDR</option>
+                            <option value="yen">Yen</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <label class="lb"><b>BERAT PRODUK/PCS</b></label>
+                        <label><b>UKURAN (P X L X T)</b></label>
+                        <div class="bu">
+                            <input type="number" name="berat" placeholder="Berat" />
+                            <select name="gram">
+                                <option value="gram">Gram</option>
+                                <option value="liter">Liter</option>
+                            </select>
+                            <input type="number" name="ukuran" placeholder="Lebar" />
+                            <input type="number" name="ukuran" placeholder="Tinggi" />
+                            <input type="number" name="ukuran" placeholder="Panjang" />
+                            <select name="cm">
+                                <option value="cm">Cm</option>
+                                <option value="m">M</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <label><b>CATATAN</b></label>
+                    <textarea name="catatan" placeholder="Contoh : Putih, X, XXL"></textarea>
+                </div>
+                <div class="row">
+                    <label for="jumlah"><b>JUMLAH</b></label>
+                    <div class="aa">
+                        <button>-</button>
+                        <input type="text" name="jumlah" id="" value="1" class="control">
+                        <button>+</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <label><b>NEGARA</b></label>
+                    <div>
+                        <select name="negara">
+                            <option value="indonesia"></option>
+                            <option value="usa">Indonesia</option>
+                            <option value="japan">Japan</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="gambar">
+                        <label for="upload"> <b>UPLOAD IMAGE</b> <br> <b>(MAKS. 2.5 MB)</b>
+                            <img src="gambar/gambar.png" alt="">
+                        </label>
+                        <input type="file" name="upload" id="upload">
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" name="tambah" value="TAMBAH KE KERANJANG" />
+                    <input type="submit" name="beliin" value="BELIIN" />
+                </div>
+            </fieldset>
+        </div>
+    </form>
+
+</body>
+
+</html>
